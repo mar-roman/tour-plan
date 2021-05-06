@@ -506,7 +506,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -543,8 +543,17 @@ template {
 }
 
 @media (max-width: 576px) {
+  .navbar-top {
+    padding: 26px 0;
+  }
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 87.5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
