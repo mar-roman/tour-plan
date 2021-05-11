@@ -672,6 +672,7 @@ template {
   width: 350px;
   min-height: 210px;
   padding: 28px;
+  font-style: Nunito, sans-serif;
   background-color: #0A223D;
   color: #ffffff;
 }
