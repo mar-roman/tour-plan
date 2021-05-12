@@ -8,18 +8,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=7cd3c40f-ac6c-46c2-bebf-3943335a8ade&lang=ru_RU"
-    type="text/javascript"></script>
-  <script type="text/javascript">
-    ymaps.ready(init);
-    function init() {
-      var myMap = new ymaps.Map("map", {
-        center: [55.76, 37.64],
-        zoom: 7
-      });
-    }
-  </script>
-</head>
 <body>
   <header class="navbar">
     <div class="container">
@@ -171,7 +159,12 @@
             <button class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          <div class="map" id="map"></div>
+          <div class="map">
+            <iframe class="map__google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0412632673433!2d98.2925528142737!3d7.890752094315369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1620802289709!5m2!1sru!2sru"
+              style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
         </div>
         <!-- /.hotel-right -->
       </div>
