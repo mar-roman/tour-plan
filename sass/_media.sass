@@ -4,8 +4,8 @@
   .hotel
     &-slider
       width: 590px
-  .swiper
-    &-slide
+  .hotel
+    &-slider
       &__image
         height: 100%
         width: 100%
@@ -42,6 +42,10 @@
     width: 340px
   .slider
     width: 100%
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -98,12 +102,44 @@
       width: 92%
     &-title
       padding-bottom: 37px
+  .reviews
+    padding-bottom: 60px
+    &__title
+      font-size: 30px
+      line-height: 38px
+    &-slider
+      &__title
+        margin-bottom: 50px
+      &__item
+        padding: 0 30px 30px
+        &::before, &::after
+          display: none
+      &__button
+        top: 45px
+        &--prev
+          left: 50%
+          transform: translate(-50%, -50%)
+          margin-left: -85px
+        &--next
+          right: 50%
+          transform: translate(50%, -50%)
+          margin-right: -85px
 @media (max-width: 576px)
   .navbar
     &-top
       padding: 26px 0
   .logo
     width: 99px
+  .reviews
+    padding-bottom: 50px
+    &__title
+      width: 70%
+      margin: 0 auto 42px
+      font-size: 18px
+      line-height: 23px
+    &-slider
+      &__item
+        padding-bottom: 36px
 @media (max-width: 575px)
   .container, .newsletter-wrapper
     width: 87.5%
