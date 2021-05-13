@@ -97,35 +97,32 @@
       </div>
       <!-- /.hotel-info -->
       <div class="hotel-grid">
-        <div class="slider hotel__slider">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide-1.jpg" alt="slide-1">
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide-2.jpg" alt="slide-2">
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide-3.jpg" alt="slide-3">
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide-4.jpg" alt="slide-4">
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide-5.jpg" alt="slide-5">
-              </div>
+        <!-- Slider main container -->
+        <div class="swiper-container hotel-slider hotel__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slide-1.jpg" alt="slide-1">
             </div>
-            <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button--prev"></button>
-            <button class="slider-button slider-button--next"></button>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slide-2.jpg" alt="slide-2">
+            </div>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slide-3.jpg" alt="slide-3">
+            </div>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slide-4.jpg" alt="slide-4">
+            </div>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slide-5.jpg" alt="slide-5">
+            </div>
           </div>
-          <!-- /.swiper-container -->
+          <!-- If we need navigation buttons -->
+          <button class="hotel-slider__button hotel-slider__button--prev"></button>
+          <button class="hotel-slider__button hotel-slider__button--next"></button>
         </div>
-        <!-- /.slider -->
+        <!-- /.swiper-container -->
         <div class="hotel-right">
           <div class="booking">
             <div class="booking__info">
@@ -184,6 +181,93 @@
       </form>
     </div>
     <!-- /.newsletter-wrapper -->
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">What people think about us</h2>
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__user-name">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only
+                that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which
+                were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per
+                atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+                was a good experience and could recommend.
+              </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-3.jpg" alt="Photo: Cristy Shell" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__user-name">Cristy Shell</h3>
+                <span class="reviews-slider__date">Stayed 11 Feb, 2017</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quae minus magnam laboriosam iure earum, saepe quibusdam. Et quidem debitis sapiente dicta nam placeat minima expedita, perferendis voluptas voluptatum nulla quos. Reiciendis incidunt tempora dolore sint blanditiis eos qui nesciunt reprehenderit sunt, ipsum porro totam nostrum debitis harum cum, illum cumque praesentium rerum quaerat ipsa.
+              </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-2.jpg" alt="Photo: Raily Cyocko" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__user-name">Raily Cyocko</h3>
+                <span class="reviews-slider__date">Stayed 1 Sep, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus modi dignissimos aliquam illum ullam officia, ratione enim excepturi sit, hic porro quis ipsam quia velit expedita deleniti esse quaerat repellendus voluptates. Corrupti ut magnam natus harum vitae odit repellendus impedit dolor tempore! Rerum, quod harum. Laudantium aperiam at nobis rerum mollitia neque nam culpa inventore corporis. Aspernatur itaque accusamus suscipit!
+              </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+        <div class="reviews-slider__button reviews-slider__button--prev"></div>
+        <div class="reviews-slider__button reviews-slider__button--next"></div>
+      </div>
+      <!-- /.reviews-slider -->
+    </div>
+    <!-- /.container -->
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
