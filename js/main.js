@@ -17,7 +17,7 @@ if (e.which == 39) {
     };      
  })
 
- const reviewsSlider = new Swiper('.reviews-slider', {
+const reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
   // Navigation arrows
@@ -26,3 +26,6 @@ if (e.which == 39) {
     prevEl: '.reviews-slider__button--prev',
   },
 });
+
+//Parallax effect
+$('.newsletter').parallax({imageSrc: '../img/newsletter-bg.jpg'});
