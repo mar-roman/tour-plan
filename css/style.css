@@ -1186,6 +1186,9 @@ template {
   .slider {
     width: 100%;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews__title {
     font-size: 30px;
     line-height: 38px;
@@ -1349,7 +1352,7 @@ template {
     padding-bottom: 36px;
   }
   .activities {
-    padding: 40px 40px;
+    padding: 40px 0 40px;
   }
   .activities__title {
     font-weight: bold;
