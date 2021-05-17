@@ -1310,6 +1310,9 @@ template {
             column-gap: 20px;
     row-gap: 20px;
   }
+  .package--primary .package-info {
+    padding: 25px 21px 25px 27px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1537,6 +1540,9 @@ template {
     -webkit-column-gap: 17px;
             column-gap: 17px;
     row-gap: 17px;
+  }
+  .package-info {
+    padding: 22px 14px 20px 18px;
   }
   .package--primary {
     height: auto;
