@@ -415,6 +415,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__item--mobile_visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -474,6 +478,10 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.navbar__user--mobile_visible, .navbar__search--mobile_visible {
+  display: none;
 }
 
 .breadcrumb-list {
@@ -1738,11 +1746,47 @@ template {
     right: 0;
     z-index: 99;
   }
-  .navbar__search, .navbar__user {
+  .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
+  }
+  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .navbar-bottom {
     display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+    position: fixed;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile_visible {
+    display: block;
   }
   .navbar .menu-button {
     display: -webkit-box;
@@ -1769,6 +1813,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
@@ -1925,8 +1974,17 @@ template {
 }
 
 @media (max-width: 576px) {
+  body {
+    padding-top: 70px;
+  }
   .navbar-top {
     padding: 26px 0;
+  }
+  .navbar-bottom {
+    top: 70px;
+  }
+  .navbar-menu__item {
+    max-width: 100%;
   }
   .logo {
     width: 99px;

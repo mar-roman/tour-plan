@@ -132,10 +132,31 @@
         left: 0
         right: 0
         z-index: 99
-    &__search, &__user
-      display: none
+    &__user, &__search
+      &--mobile_hidden
+        display: none
+      &--mobile_visible
+        display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
     &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 30px
+      &--visible
+        display: block
+        position: fixed
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile_visible
+          display: block
     .menu
       &-button
         display: flex
@@ -152,6 +173,12 @@
           width: 16px
           height: 1px
           background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .hotel
     &-name
       flex-basis: 100%
@@ -252,9 +279,16 @@
       &-wrapper
         width: 100%
 @media (max-width: 576px)
+  body
+    padding-top: 70px
   .navbar
     &-top
       padding: 26px 0
+    &-bottom
+      top: 70px
+    &-menu
+      &__item
+        max-width: 100%
   .logo
     width: 99px
   .reviews
