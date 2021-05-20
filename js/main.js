@@ -16,7 +16,6 @@ if (e.which == 39) {
      $('.hotel-slider__button--next')[0].click();
     };      
  })
-
 const reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
@@ -29,3 +28,10 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 
 //Parallax effect
 $('.newsletter').parallax({imageSrc: '../img/newsletter-bg.jpg'});
+
+//Mobile menu
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function(){
+  console.log("Клик по кнопке меню");
+  document.querySelector(".navbar-bottom").classList.toggle(".navbar-bottom--visited")
+});
