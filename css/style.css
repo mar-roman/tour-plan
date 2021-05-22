@@ -1459,7 +1459,7 @@ template {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47.5%;
       flex-basis: 47.5%;
-  color: #BDBDBD;
+  color: #333333;
   font-size: 12px;
   line-height: 15px;
 }
@@ -1468,7 +1468,7 @@ template {
   background-color: #ffffff;
   border-radius: 4px;
   padding: 18px 23px;
-  color: #BDBDBD;
+  color: #333333;
   font-size: 12px;
   line-height: 15px;
   border: none;
@@ -1739,12 +1739,22 @@ template {
   body {
     padding-top: 100px;
   }
+  .navbar-bottom {
+    overflow: scroll;
+  }
   .navbar--mobile_fixed {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99;
+  }
+  .navbar-menu {
+    padding: 0 0 68px;
+  }
+  .navbar__search {
+    max-width: 243px;
+    margin-bottom: 19px;
   }
   .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
@@ -1762,6 +1772,7 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 7px;
   }
   .navbar-bottom {
     display: none;

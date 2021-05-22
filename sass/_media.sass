@@ -125,6 +125,8 @@
   body
     padding-top: 100px
   .navbar
+    &-bottom
+      overflow: scroll
     &--mobile
       &_fixed
         position: fixed
@@ -132,6 +134,11 @@
         left: 0
         right: 0
         z-index: 99
+    &-menu
+      padding: 0 0 68px
+    &__search
+      max-width: 243px
+      margin-bottom: 19px
     &__user, &__search
       &--mobile_hidden
         display: none
@@ -140,6 +147,7 @@
     &__user
       flex-direction: column
       justify-content: center
+      margin-bottom: 7px
     &-bottom
       display: none
       position: fixed
