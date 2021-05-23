@@ -812,6 +812,20 @@ template {
   height: 100%;
 }
 
+.hotel-back-ref__button {
+  margin-top: 15px;
+  width: 100%;
+  min-height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px;
