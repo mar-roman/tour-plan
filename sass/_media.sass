@@ -118,6 +118,9 @@
       flex-basis: 47.5%
     &-more
       margin-top: 56px
+  .modal
+    &__dialog
+      overflow: scroll
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -421,3 +424,16 @@
         height: 47px
       &__cards
         width: 136px
+  .modal
+    &__dialog
+      overflow: scroll
+      left: 50%
+      top: 10px
+      transform: translate(-50%, 0)
+      padding-left: 25px
+      padding-right: 25px
+    &__fields-wrapper
+      flex-direction: column-reverse
+      align-items: start
+    &__info
+      margin-bottom: 10px

@@ -12,13 +12,21 @@ $email = $_POST['email'];
 
 // Формирование самого письма
 if(!empty($email)){
-    $title = "Новая заявка Best Tour Plan";
-    $body = "
-    <h2>Новое письмо</h2>
-    <b>email:</b> $email<br>
-";
-}
-else{
+    if(empty($name) && empty($phone) && empty($message)){
+        $title = "Новая заявка Best Tour Plan Newsletter";
+        $body = "
+        <h2>Новое письмо</h2>
+        <b>email:</b> $email<br>";
+    } else {
+        $title = "Новое обращение Best Tour Plan Booking";
+        $body = "
+        <h2>Новое письмо</h2>
+        <b>Имя:</b> $name<br>
+        <b>Телефон:</b> $phone<br>
+        <b>email:</b> $email<br><br>
+        <b>Сообщение:</b><br>$message";
+    }
+} else {
     $title = "Новое обращение Best Tour Plan";
     $body = "
     <h2>Новое письмо</h2>
