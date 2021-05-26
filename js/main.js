@@ -36,7 +36,7 @@ $(document).ready(function(){
     $(".navbar-bottom").toggleClass("navbar-bottom--visible")
   });
 
-  //Оттправка форм
+  //Отправка форм
   var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $('.modal__close');
   modalButton.on('click', openModal);
@@ -83,4 +83,6 @@ $(document).ready(function(){
     },
   });
   });
+  //Маска телефона
+  $('.phone').mask('+7 (000) 000-00-00');
 });
