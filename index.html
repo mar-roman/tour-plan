@@ -7,23 +7,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 <body>
   <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img src="img/horisontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden" data-aos="fade-right" data-aos-delay="200">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
 
-        <a class="user navbar__user navbar__user--mobile_hidden" href="#">
+        <a class="user navbar__user navbar__user--mobile_hidden" href="#" data-aos="fade-right" data-aos-delay="300">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -89,7 +90,7 @@
   <section class="hotel">
     <div class="container">
       <div class="hotel-info">
-        <div class="hotel-info__text">
+        <div class="hotel-info__text" data-aos="zoom-in" data-aos-delay="600">
           <div class="hotel-wrapper">
             <div class="hotel-info__stars">
               <img src="img/star.svg" alt="star">
@@ -113,7 +114,7 @@
       <!-- /.hotel-info -->
       <div class="hotel-grid">
         <!-- Slider main container -->
-        <div class="swiper-container hotel-slider hotel__slider">
+        <div class="swiper-container hotel-slider hotel__slider" data-aos="zoom-in" data-aos-delay="700">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -139,7 +140,7 @@
         </div>
         <!-- /.swiper-container -->
         <div class="hotel-right">
-          <div class="booking">
+          <div class="booking" data-aos="zoom-in" data-aos-delay="800">
             <div class="booking__info">
               <div class="booking__price">
                 <span class="booking__start">price starts as</span>
@@ -171,7 +172,7 @@
             <button data-toggle="modal" class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          <div class="map">
+          <div class="map" data-aos="zoom-in" data-aos-delay="300">
             <iframe class="map__google-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0412632673433!2d98.2925528142737!3d7.890752094315369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1620802289709!5m2!1sru!2sru"
               style="border:0;" allowfullscreen="" loading="lazy">
@@ -186,9 +187,9 @@
   </section>
   <section class="packages">
     <div class="container">
-      <h2 class="packages__title">Other Packages</h2>
+      <h2 class="packages__title" data-aos="fade-up" data-aos-delay="100">Other Packages</h2>
       <div class="packages-wrapper">
-        <div class="package package--primary">
+        <div class="package package--primary" data-aos="fade-up" data-aos-delay="300">
           <img src="img/package-1.jpg" alt="Hotel Blue Haven" class="package__image package__image--primary">
           <div class="package-info">
             <div class="package-info__stars">
@@ -228,7 +229,7 @@
           <button class="package__button package__button--primary">Flash Offer</button>
         </div>
         <!-- /.package -->
-        <div class="package">
+        <div class="package" data-aos="fade-up" data-aos-delay="500">
           <img src="img/package-2.jpg" alt="LUX* Belle Mare" class="package__image">
           <div class="package-info">
             <h3 class="package-info__title">LUX* Belle Mare</h3>
@@ -257,7 +258,7 @@
           <button class="package__button">Flash Offer</button>
         </div>
         <!-- /.package -->
-        <div class="package">
+        <div class="package" data-aos="fade-up" data-aos-delay="300">
           <img src="img/package-3.jpg" alt="White Palace" class="package__image">
           <div class="package-info">
             <h3 class="package-info__title">White Palace</h3>
@@ -286,7 +287,7 @@
           <button class="package__button">Flash Offer</button>
         </div>
         <!-- /.package -->
-        <div class="package">
+        <div class="package" data-aos="fade-up" data-aos-delay="400">
           <img src="img/package-4.jpg" alt="Luxury Place" class="package__image">
           <div class="package-info">
             <h3 class="package-info__title">Luxury Place</h3>
@@ -315,7 +316,7 @@
           <button class="package__button">Flash Offer</button>
         </div>
         <!-- /.package -->
-        <div class="package">
+        <div class="package" data-aos="fade-up" data-aos-delay="500">
           <img src="img/package-5.jpg" alt="Hotel Five Star" class="package__image">
           <div class="package-info">
             <h3 class="package-info__title">Hotel Five Star</h3>
@@ -364,8 +365,8 @@
   </section>
   <section class="reviews">
     <div class="container">
-      <h2 class="reviews__title">What people think about us</h2>
-      <div class="swiper-container reviews-slider">
+      <h2 class="reviews__title" data-aos="zoom-in" data-aos-delay="100">What people think about us</h2>
+      <div class="swiper-container reviews-slider" data-aos="flip-right" data-aos-delay="600">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="reviews-slider__item">
@@ -451,27 +452,27 @@
   </section>
   <section class="activities">
     <div class="container">
-      <h2 class="activities__title">Other Activities</h2>
+      <h2 class="activities__title" data-aos="fade-right" data-aos-delay="100">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-right" data-aos-delay="700">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-right" data-aos-delay="900">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button class="card__button">Book Now</button>
@@ -628,6 +629,7 @@
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
