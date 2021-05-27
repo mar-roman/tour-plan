@@ -79,6 +79,7 @@ $(document).ready(function(){
       },
       phone: {
         required: "Your phone is required",
+        minlength: "there must be 10 numbers in the phone",
       },
     },
   });
